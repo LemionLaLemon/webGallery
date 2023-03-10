@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <!--css goes here-->
 <style>
+	/* Style for the gallery container */
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+
+	/* Style for each image container */
+	.gallery figure {
+		flex-basis: 30%;
+		margin: 10px;
+		text-align: center;
+	}
+
+	/* Style for the image itself */
+	.gallery img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Style for the image caption */
+	.gallery figcaption {
+		margin-top: 5px;
+		font-style: italic;
+		font-size: 14px;
+	}
+</style>
+<style>
 	.large-button {
 	  font-size: 13px;
 	  padding: 14px 18px;
