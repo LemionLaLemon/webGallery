@@ -67,6 +67,75 @@
 <style>
 	.gallery {
 	display: flex; /* Set the container to use flexbox */
+<!DOCTYPE html>
+<!--css goes here-->
+<style>
+	/* Style for the gallery container */
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+
+	/* Style for each image container */
+	.gallery figure {
+		flex-basis: 30%;
+		margin: 10px;
+		text-align: center;
+	}
+
+	/* Style for the image itself */
+	.gallery img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Style for the image caption */
+	.gallery figcaption {
+		margin-top: 5px;
+		font-size: 14px;
+	}
+</style>
+<style>
+	.large-button {
+	  font-size: 13px;
+	  padding: 14px 18px;
+	  border-radius: 8px;
+	  background-color: #656060;
+	  color: #000000;
+	  border: none;
+	  cursor: pointer;
+	  transition: all 0.3s ease;
+	}
+  
+	.large-button:hover {
+	  background-color: #a6a5a5;
+	  color: #060606;
+	}
+  </style>
+<style>
+	figcaption{
+		background-color: #cf6fc2;
+	}
+
+
+</style>
+<style>
+    hr {
+      width: 100%;
+      height: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #000000;
+      border: 0 none;
+    }
+  </style>
+<style>
+	.gallery {
+	display: flex; /* Set the container to use flexbox */
 	flex-wrap: wrap; /* Wrap the items onto multiple lines if necessary */
   }
   body {
@@ -107,6 +176,11 @@
 		<figure>
 			<img src="/saranrath stupid.jpg" alt="Photo 1">
 			<figcaption>Photo of when Saranrath washed his hair in the toilet</figcaption>
+		</figure>
+
+		<figure>
+			<img src="/catpoop.jpg" alt="Photo 2">
+			<figcaption>Photo of Saranrath's cat pooping</figcaption>
 		</figure>
 	</div>
 </body>
